@@ -1,45 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Starter Kit</title>
+<html lang="ru">
 
-    <!-- Don't forget to delete this style tag. -->
-    <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Мастерская: форма отзыва</title>
+</head>
 
-      .intro {
-        text-align: center;
-      }
+<body>
+  <p><a href="index.html">На главную</a></p>
 
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
+  <form class="feedback-form js-feedback-form">
+    <label>
+      <b>Имя</b>
+      <input type="text" name="name" placeholder="Введите ваше имя" value="Анонимус" />
+    </label>
+    <label>
+      <b>Сообщение</b>
+      <textarea name="message" rows="6"></textarea>
+    </label>
+    <button type="submit">Оставить отзыв</button>
+  </form>
 
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
-  </head>
 
-  <body>
-    <article class="intro">
-      <h1>Webpack starter kit</h1>
 
-      <!-- HTML image reference example. -->
-      <img src="./images/intro.png" alt="" width="640" />
-    </article>
-  </body>
+
+  <div class="palette js-palette"></div>
+
+
+  <ul class="gallery js-gallery"></ul>
+</body>
+
 </html>
